@@ -1,18 +1,11 @@
 public class Main {
   public static void main (String[] args) {
     
-    final double PI = 3.14;
+    int a = 3;
+    int b = 5;
+    int c = a * b;
     
-    int pie = 5;
-    
-    System.out.println("半径" + pie + "cmのパイの面積は、");
-    
-    System.out.println(pie * pie * PI);
-    
-    System.out.println("パイの半径を倍にします");
-    PI = 10; //ここでエラーを起こす。定数を再代入。
-    System.out.println("半径" + pie + "cmのパイの面積は、");
-    System.out.println(pie * pie * PI);
+    System.out.println("縦幅3横幅5の面積は、" + c);
   }
 }
 
