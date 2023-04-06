@@ -1,13 +1,18 @@
 public class Main {
   public static void main (String[] args) {
     
-    int age = 20;
+    final double PI = 3.14;
     
-    System.out.println("私の年齢は" + age);
+    int pie = 5;
     
-    age = 31;
+    System.out.println("半径" + pie + "cmのパイの面積は、");
     
-    System.out.println("…いや、本当の年齢は" + age);
+    System.out.println(pie * pie * PI);
+    
+    System.out.println("パイの半径を倍にします");
+    PI = 10; //ここでエラーを起こす。定数を再代入。
+    System.out.println("半径" + pie + "cmのパイの面積は、");
+    System.out.println(pie * pie * PI);
   }
 }
 
