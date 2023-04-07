@@ -1,13 +1,12 @@
-//2つの値を比較して大きい方の数値を代入する
-// int m = Math.max(①,②);
+// 文字列を数値に変換する
+// int n = Integer.perseInt
 
 public class Main {
   public static void main(String[] args) {
     
-    int a = 5;
-    int b = 3;
-    int m = Math.max(a, b);
+    String age = "31";
+    int n = Integer.parseInt(age);
     
-    System.out.println("比較実験：" + a + "と" + b + "とで大きい方は..." + m);
+    System.out.println("あなたは来年、" + (n + 1) + "歳になりますね。");
   }
 }
