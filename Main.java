@@ -1,13 +1,13 @@
-// 改行せずに画面に文字を表示する
-// System.out.print(①);
+//2つの値を比較して大きい方の数値を代入する
+// int m = Math.max(①,②);
 
 public class Main {
   public static void main(String[] args) {
     
-    String name = "おおやま";
+    int a = 5;
+    int b = 3;
+    int m = Math.max(a, b);
     
-    System.out.print("私の名前は");
-    System.out.print(name);
-    System.out.print("です");
+    System.out.println("比較実験：" + a + "と" + b + "とで大きい方は..." + m);
   }
 }
