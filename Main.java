@@ -1,11 +1,12 @@
 public class Main {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
+    int a;
+    int b;
     
-    boolean result = true;
-    char character = '駆';
-    double pi = 3.14;
-    long number = 314159265853979L;
-    String msg = "ミナトの攻撃！敵に15ポイントのダメージを与えた。";
+    a = 20;
+    b = a + 5;
+    
+    System.out.println(a);
+    System.out.println(b);
   }
 }
-
