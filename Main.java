@@ -1,12 +1,11 @@
-// 文字列を数値に変換する
-// int n = Integer.perseInt
+// 乱数を発生させる
+// int r = new ava.util.Random().nextInt
 
 public class Main {
   public static void main(String[] args) {
     
-    String age = "31";
-    int n = Integer.parseInt(age);
+    int r = new java.util.Random().nextInt(90);
     
-    System.out.println("あなたは来年、" + (n + 1) + "歳になりますね。");
+    System.out.println("あなたはたぶん、" + r + "歳ですね？");
   }
 }
