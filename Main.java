@@ -1,9 +1,5 @@
 public class Main {
   public static void main(String[] args) {
-    int a = 10;
-    int b = 10;
-    
-    System.out.println(++a + 50);
-    System.out.println(b + 50);
+    int i = 3.2; //小数点以下は入らないのでエラーが出る
   }
 }
