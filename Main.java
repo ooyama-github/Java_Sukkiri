@@ -1,25 +1,21 @@
 public class Main {
   public static void main(String[] args) {
     
-    System.out.print("[メニュー] １：検索　２：登録　３：削除　４：変更>");
-    int selected = new java .util.Scanner(System.in).nextInt();
+    System.out.println("【数あてゲーム】");
     
-    switch (selected) {
-      case 1:
-        System.out.println("検索します");
+    int ans = new java.util.Random().nextInt(10);
+    
+    for (int i = 0; i < 5; i++) {
+      System.out.println("０～９の数字を入力して下さい");
+      int num = new java.util.Scanner(System.in).nextInt();
+      
+      if(num == ans) {
+        System.out.println("アタリ！");
         break;
-        
-      case 2:
-        System.out.println("登録します");
-        break;
-        
-      case 3:
-        System.out.println("削除します");
-        break;
-        
-      case 4:
-        System.out.println("変更します");
-        break;
+      } else {
+        System.out.println("違います");
+      }
     }
+    System.out.println("ゲームを終了します");
   }
 }
