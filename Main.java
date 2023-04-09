@@ -1,19 +1,12 @@
-//ループ変数を1からスタートする
-
-for(int i = 1; i < 10; i++)
-
-//ループ変数を2ずつ増やす
-
-for(int i = 0; i < 10; i += 2)
-
-//ループ変数を10から1ずつ1まで　減らしていく
-
-for(int = 10;  i < 0; i--)
-
-//ループ変数を初期化しない
-
-for(; i < 10; i++)
-
-//繰り返し時の処理を行わない
-
-for(int i = 0; i < 10;)
+public class Main {
+  public static void main(String[] args) {
+    for(int i = 1; i < 10; i++) {
+      for(int j = 1; j < 10; j++) {
+        
+        System.out.print(i * j); //掛け算の結果を入力
+        System.out.print(" "); //空白を入力
+      }
+      System.out.println(""); //改行を入力
+    }
+  }
+}
