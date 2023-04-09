@@ -1,12 +1,11 @@
-public class Main {
-  public static void main(String[] args) {
-    for(int i = 1; i < 10; i++) {
-      for(int j = 1; j < 10; j++) {
-        
-        System.out.print(i * j); //掛け算の結果を入力
-        System.out.print(" "); //空白を入力
-      }
-      System.out.println(""); //改行を入力
-    }
-  }
-}
+//変数　weightの値が60に等しい
+weight == 60;
+
+//変数age1とage2の合計を2倍したものが60を超えている
+(age1 + age2) * 2 > 60
+
+// 変数ageが奇数である
+age % 2 == 1
+
+// 変数nameの中身の文字列が「湊」と等しい
+name.equals("湊")
