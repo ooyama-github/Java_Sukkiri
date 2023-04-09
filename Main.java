@@ -1,11 +1,22 @@
-//変数　weightの値が60に等しい
-weight == 60;
-
-//変数age1とage2の合計を2倍したものが60を超えている
-(age1 + age2) * 2 > 60
-
-// 変数ageが奇数である
-age % 2 == 1
-
-// 変数nameの中身の文字列が「湊」と等しい
-name.equals("湊")
+public class Main {
+  public static void main(String[] args) {
+    
+    int isHungry = 1;
+    
+    String food = "リンゴ";
+    
+    System.out.println("こんにちは");
+    
+    if (isHungry == 0) {
+      System.out.println("お腹がいっぱいです");
+    } else {
+      System.out.println("はらぺこです");
+    }
+      
+      if (isHungry == 1) {
+        System.out.println(food + "をいただきます");
+      }
+      
+      System.out.println("ごちそうさまでした");
+  }
+}
