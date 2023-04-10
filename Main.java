@@ -3,7 +3,7 @@ public class Main {
     
     int[] scores = {20, 30, 40, 50, 80};
     
-    int sum = scores[1] + scores[2] + scores[3] + scores[4] + scores[5];
+    int sum = scores[0] + scores[1] + scores[2] + scores[3] + scores[4];
     
     int avg = sum / scores.length;
     
