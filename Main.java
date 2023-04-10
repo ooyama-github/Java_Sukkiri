@@ -1,10 +1,11 @@
 public class Main {
   public static void main(String[] args) {
     
-    int[] scores = new int[5];
+    int[] scores;
     
-    int num = scores.length;
+    scores = new int[5];
+    scores[1] = 30;
     
-    System.out.println("要素の数：" + num);
+    System.out.println(scores[1]);
   }
 }
