@@ -1,17 +1,13 @@
+//拡張for文で配列を回す
+//for (要素の型　任意の変数名 ； 配列変数名)
+
 public class Main {
   public static void main(String[] args) {
     
-    int[] seq = new int[10];
+    int[] scores = {20, 30, 40, 50, 80};
     
-    //塩基配列をランダムに生成
-    for (int i = 0; i < seq.length; i++) {
-      seq[i] = new java.util.Random().nextInt(4);
-    }
-    
-    //生成した塩素配列の記号を表示
-    for (int i = 0; i < seq.length; i++) {
-      char[] base = {'A', 'T', 'G', 'C'};
-      System.out.print(base[seq[i]] + " ");
+    for (int i = 0; i < scores.length; i++) {
+      System.out.println(scores[i]);
     }
   }
 }
