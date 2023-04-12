@@ -1,13 +1,16 @@
 public class Main {
   public static void main(String[] args) {
     
-    int[] counts = null;
-    float[] heights = {171.3F, 175.0F);
+    int[] numbers = {3, 4, 9};
     
-    System.out.println(counts[1]);
-    System.out.println(heights[2]);
+    System.out.println("１桁の数字を入力して下さい");
+    
+    int input = new java.util.Scanner(System.in).nextInt();
+    
+    for (int n : numbers) {
+      if (n == input) {
+        System.out.println("アタリ！");
+      }
+    }
   }
 }
-
-// ５行目：NullPointerException～nullが格納されている配列変数を利用しようとした
-// ６行目：ArrayIndexOutOfBoundsException～添え字の数があっていない
