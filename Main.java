@@ -1,10 +1,13 @@
 public class Main {
   public static void main(String[] args) {
     
-    int[] arrayA = {1, 2, 3};
-    int[] arrayB;
-    arrayB = arrayA;
-    arrayB[0] = 100;
-    System.out.println(arrayA[0]);
+    boolean judge = true;
+    if (judge == true) {
+      int[] array = {1, 2, 3};
+    }
   }
 }
+
+// 使用できなくなった配列は、もう使いませんから、破棄してメモリ領域をお返しします。
+// というメモリの後片付けをプログラムで明示的に指示しなければなりません。
+// しかし、Javaにはガベージコレクションという仕組みが常に動いており、実行中のプログラムが生み出したメモリ上のゴミ（どの変数からも参照されなくなったメモリ領域）を自動的に探し出して片づけてくれます。
