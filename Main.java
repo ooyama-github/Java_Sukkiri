@@ -29,3 +29,8 @@ public class Main {
     System.out.println(add("Hello", "World"));
   }
 }
+
+//実行結果
+//30
+//6.2
+//HelloWorld
