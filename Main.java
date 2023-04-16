@@ -34,3 +34,5 @@ public class Main {
 //30
 //6.2
 //HelloWorld
+
+gitでエラーが出たので試験的にコミットします
