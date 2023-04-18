@@ -1,19 +1,16 @@
 public class Main {
   public static void main(String[] args) {
-    
-    introduceOneself();
+
+    String title = "プログラミングについて";
+    String address = "oyama@jp";
+    String text = "現在Javaを勉強中です";
+    email(title, address, text);
   }
-  
-  public static void introduceOneself() {
+
+  public static void email(String title, String address, String text) {
     
-    String name = "oyama";
-    int age = 25;
-    double height = 183.4;
-    char zodiac = '乙';
-    
-    System.out.println("私の名前は" + name + "です。");
-    System.out.println("年齢は" + age + "です。");
-    System.out.println("身長は" + height + "です。");
-    System.out.println("十二支は" + zodiac + "です。");
+    System.out.println(address + "に、以下のメールを送信しました");
+    System.out.println("件名：" + title);
+    System.out.println("本文：" + text);
   }
 }
