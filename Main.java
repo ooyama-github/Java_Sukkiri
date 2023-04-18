@@ -1,16 +1,14 @@
 public class Main {
-  //int型配列を受け取り
-  //配列内の要素全てに1を加えるメソッド
-  
-  public static void incArray(int[] array) {
-    for (int i = 0; i < array.length; i++) {
-      array[i]++;
+  public static int[] makeArray(int size) {
+    int[] newArray =new int[size];
+    for (int i = 0; i <newArray.length; i++) {
+      newArray[i] = i;
     }
+    return newArray;
   }
   
   public static void main(String[] args) {
-    int[] array = {1, 2, 3};
-    incArray(array);
+    int[] array = makeArray(3);
     for (int i : array) {
       System.out.println(i);
     }
