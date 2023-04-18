@@ -1,16 +1,19 @@
 public class Main {
-  public static int[] makeArray(int size) {
-    int[] newArray =new int[size];
-    for (int i = 0; i <newArray.length; i++) {
-      newArray[i] = i;
-    }
-    return newArray;
+  public static void main(String[] args) {
+    
+    introduceOneself();
   }
   
-  public static void main(String[] args) {
-    int[] array = makeArray(3);
-    for (int i : array) {
-      System.out.println(i);
-    }
+  public static void introduceOneself() {
+    
+    String name = "oyama";
+    int age = 25;
+    double height = 183.4;
+    char zodiac = '乙';
+    
+    System.out.println("私の名前は" + name + "です。");
+    System.out.println("年齢は" + age + "です。");
+    System.out.println("身長は" + height + "です。");
+    System.out.println("十二支は" + zodiac + "です。");
   }
 }
