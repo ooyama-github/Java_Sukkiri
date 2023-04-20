@@ -1,10 +1,12 @@
+import comment.Zenhan; // 追加
+
 public class Main {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     
-    int [] heights = {172, 149, 152, 191, 155};
-    java.util.Arrays.sort(heights);
-    for (int h : heights) {
-      System.out.println(h);
-    }
+    Zenhan.doWarusa(); //前半
+    Zenhan.doTogame(); //前半
+    
+    comment.Kouhan.callDeae(); //後半
+    comment.Kouhan.showMondokoro(); //後半
   }
 }
