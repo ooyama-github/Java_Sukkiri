@@ -1,5 +1,5 @@
 public class Matango {
   
   int hp;
-  int level = 10;
+  final int level = 10;
 }
