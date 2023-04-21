@@ -19,7 +19,7 @@ public class Hero {
   //転ぶ
   public void slip() {
     this.hp -= 5;
-    System.out.pritnln(this.name + "は、転んだ！");
+    System.out.println(this.name + "は、転んだ！");
     System.out.println("5のダメージ！");
   }
   
