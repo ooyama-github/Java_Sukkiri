@@ -1,12 +1,10 @@
-import comment.Zenhan; // 追加
-
 public class Main {
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
     
-    Zenhan.doWarusa(); //前半
-    Zenhan.doTogame(); //前半
-    
-    comment.Kouhan.callDeae(); //後半
-    comment.Kouhan.showMondokoro(); //後半
+    //（以下の内容をJavaで）
+    //勇者よ、この仮想世界に生まれよ！
+    //お化けキノコよ、この仮想世界に生まれよ！
+    //勇者よ、戦え！
+    //お化けキノコよ、逃げろ！
   }
 }
