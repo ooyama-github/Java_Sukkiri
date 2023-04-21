@@ -1,10 +1,7 @@
 public class Main {
   public static void main(String[] args) {
     
-    //（以下の内容をJavaで）
-    //勇者よ、この仮想世界に生まれよ！
-    //お化けキノコよ、この仮想世界に生まれよ！
-    //勇者よ、戦え！
-    //お化けキノコよ、逃げろ！
+    //1.勇者を生成
+    Hero h = new Hero();
   }
 }
