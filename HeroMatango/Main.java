@@ -1,18 +1,15 @@
 public class Main {
   public static void main(String[] args) {
     
-    //1.勇者を生成
-    Hero h = new Hero();
+    int yusha_hp = 100;
+    int matango1_hp = 50;
+    int matango2_hp = 48;
+    String yusha_name = "ミナト";
+    int matango1_level = 10;
+    int matango2_level = 10;
     
-    //2.フィールドに初期値をセット
-    h.name = "ミナト";
-    h.hp = 100;
-    System.out.println("勇者" + h.name + "を生み出しました！");
-    
-    //3.勇者のメソッドを呼び出してゆく
-    h.sit(5);
-    h.slip();
-    h.sit(25);
-    h.run();
+    System.out.println(yusya_name + "は5秒座った！");
+    yusha_hp += 5;
+    System.out.println("HPが5ポイント回復した");
   }
 }
