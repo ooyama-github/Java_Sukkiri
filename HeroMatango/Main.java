@@ -1,13 +1,15 @@
 public class Main {
   public static void main(String[] args) {
     
-    Hero h1;
-    h1 = new Hero();
-    h1.hp = 100;
+    Sword s = new Sword();
+    s.name = "炎の剣";
+    s.damege = 10;
     
-    Hero h2;
-    h2 = h1;
-    h2.hp = 200;
-    System.out.println(h1.hp);
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+    h.sword = s; //swordフィールドに生成済みの剣インスタンス（の番地）を代入
+    
+    System.out.println("現在の武器は" + h.sword.name); //h(勇者).（の）sword(剣).(の)name(名前)
   }
 }
