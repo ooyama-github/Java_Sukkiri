@@ -1,15 +1,23 @@
 public class Main {
   public static void main(String[] args) {
     
-    int yusha_hp = 100;
-    int matango1_hp = 50;
-    int matango2_hp = 48;
-    String yusha_name = "ミナト";
-    int matango1_level = 10;
-    int matango2_level = 10;
+    Hero h = new Hero(); //勇者を生成し初期化
+    h.name = "ミナト";
+    h.hp = 100;
     
-    System.out.println(yusya_name + "は5秒座った！");
-    yusha_hp += 5;
-    System.out.println("HPが5ポイント回復した");
+    Matango m1 = new Matango(); //お化けキノコA（1匹目）を生成し初期化
+    
+    m1.hp = 50;
+    m1.suffix = "A";
+    
+    Matango m2 = new.Matango(); //お化けキノコB(2匹目)を生成し初期化
+    m2.hp = 48;
+    m2.suffix = "B";
+    
+    //冒険の始まり
+    h.slip(); //勇者は転ぶ
+    m1.run(); //お化けキノコAが逃げる
+    m2.run(); //お化けキノコBが逃げる
+    h.run(; //勇者も逃げる)
   }
 }
