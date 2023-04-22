@@ -1,8 +1,9 @@
 public class Main {
   public static void main(String[] args) {
     
-    Hero h = new Hero(); //インスタンス生成と同時にコンストラクタによってHPに100が代入される
+    Hero h = new Hero("ミナト"); //インスタンス生成後、JVMがコンストラクタを呼び出す際にミナトを渡してもらえる)
     
-    System.out.println(h.hp); //100と表示される
+    System.out.println(h.hp);
+    System.out.println(h.name);
   }
 }
