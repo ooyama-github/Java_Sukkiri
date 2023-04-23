@@ -1,9 +1,9 @@
 public class Main {
   public static void main(String[] args) {
     
-    Hero h = new Hero("ミナト"); //インスタンス生成後、JVMがコンストラクタを呼び出す際にミナトを渡してもらえる)
-    
-    System.out.println(h.hp);
-    System.out.println(h.name);
+    Hero h1 = new Hero("ミナト"); //文字列引数があるのでコンストラクタ１が呼び出される
+    System.out.println(h1.name);
+    Hero h2 = new Hero(); //引数がないのでコンストラクタ２が呼び出される
+    System.out.println(h2.name);
   }
 }

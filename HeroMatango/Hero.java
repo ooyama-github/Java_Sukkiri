@@ -18,7 +18,7 @@ public class Hero {
   
   public Hero() {
     
-    this.hp;
+    this.hp = 100;
     this.name = "ダミー"; //ダミーの名前を設定する
   }
 }
