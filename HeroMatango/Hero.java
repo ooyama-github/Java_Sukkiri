@@ -18,6 +18,6 @@ public class Hero {
   
   public Hero() {
     
-    this.Hero("ダミー"); //コンストラクタ２
+    this("ダミー"); //コンストラクタ２ コンストラクタ１を呼び出すよう、JVMに
   }
 }
