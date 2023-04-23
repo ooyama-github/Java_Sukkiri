@@ -11,14 +11,13 @@ public class Hero {
     System.out.println("敵に5ポイントのダメージをあたえた！");
   }
   
-  public Hero(String name) {
-    this.hp = 100; //hpフィールドを100で初期化
-    this.name = name; //引数の値でnameフィールドを初期化
+  public Hero(String name) { //コンストラクタ１
+    this.hp = 100; 
+    this.name = name;
   }
   
   public Hero() {
     
-    this.hp = 100;
-    this.name = "ダミー"; //ダミーの名前を設定する
+    this.Hero("ダミー"); //コンストラクタ２
   }
 }
