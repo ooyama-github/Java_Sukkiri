@@ -13,4 +13,4 @@ public class SuperHero extends Hero { //extends Heroは「基本的にはHeroと
 }
 
 
-ポイントは、1行目のextendsです。「class SuperHero extends Hero」という宣言は、「HeroクラスをベースにしてSuperHeroクラスを定義するので、Heroと同じメンバの定義は省略します（違いだけ記述します）」という意味になります
+//ポイントは、1行目のextendsです。「class SuperHero extends Hero」という宣言は、「HeroクラスをベースにしてSuperHeroクラスを定義するので、Heroと同じメンバの定義は省略します（違いだけ記述します）」という意味になります。

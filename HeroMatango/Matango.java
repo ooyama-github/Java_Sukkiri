@@ -4,7 +4,7 @@ public class Matango {
   final int level = 10;
   char suffix;
   
-  public void run {
+  public void run() {
     System.out.println("お化けキノコは" + this.suffix + "は逃げ出した！");
   }
 }
