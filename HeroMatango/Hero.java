@@ -1,23 +1,17 @@
-//次にHeroクラスを定義する
 public class Hero {
   
-  String name;
-  int hp;
-  Sword sword; //勇者が装備している剣の情報
+  String name = "ミナト";
+  int hp = 100;
   
-  public void attack() {
-    
-    System.out.println(this.name + "は攻撃した");
-    System.out.println("敵に5ポイントのダメージをあたえた！");
+  //戦う
+  public void attack(Matango m) {
+    System.out.println(this.name + "の攻撃");
+    m.hp -= 5;
+    System.out.println("5ポイントのダメージをあたえた！");
   }
   
-  public Hero(String name) { //コンストラクタ１
-    this.hp = 100; 
-    this.name = name;
-  }
-  
-  public Hero() {
-    
-    this("ダミー"); //コンストラクタ２ コンストラクタ１を呼び出すよう、JVMに
+  //逃げる
+  public void run() {
+    System.out.println(this.name + "は逃げ出した！");
   }
 }
