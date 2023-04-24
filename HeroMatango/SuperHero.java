@@ -1,29 +1,16 @@
-public class SuperHero {
-  Stirng name = "ミナト";
-  int hp = 100;
-  boolean flying; //flyingフィールドを追加
-  
-  //戦う
-  public void attack(Matango m) {
-    System.out.println(this.name + "の攻撃！")
-    m.hp -= 5;
-    System.out.println("5ポイントのダメージをあたえた！");
-  }
-  
-  //逃げる
-  public void run() {
-    System.out.println(this.name + "は逃げ出した！");
-  }
-  
-  //飛ぶ fly()を追加
-  public void fly() {
+public class SuperHero extends Hero { //extends Heroは「基本的にはHeroと同じと宣言」という意味
+
+  boolean flying; //追加したflying
+  public void fly() { //追加したfly()
     this.flying = true;
     System.out.println("飛び上がった！");
   }
   
-  //着地する　land()を追加
-  public void land() {
+  public void land() { //追加したland()
     this.flying = false;
     System.out.println("着地した！");
   }
 }
+
+
+ポイントは、1行目のextendsです。「class SuperHero extends Hero」という宣言は、「HeroクラスをベースにしてSuperHeroクラスを定義するので、Heroと同じメンバの定義は省略します（違いだけ記述します）」という意味になります
