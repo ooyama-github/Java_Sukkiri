@@ -10,8 +10,14 @@ public class Hero {
     System.out.println("5ポイントのダメージをあたえた！");
   }
   
+  public final void slip() { //finalが付いているslipメソッド子クラスでオーバーライド禁止
+    this.hp -= 5;
+    System.out.println(this.name + "は転んだ！");
+    System.out.println("5のダメージ");
+  }
+  
   //逃げる
-  public void run() {
+  public void run() {　//runメソッドは子クラスでオーバーライド可能
     System.out.println(this.name + "は逃げ出した！");
   }
 }
