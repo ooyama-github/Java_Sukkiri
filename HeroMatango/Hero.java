@@ -17,7 +17,7 @@ public class Hero {
   }
   
   //逃げる
-  public void run() {　//runメソッドは子クラスでオーバーライド可能
+  public void run() { //runメソッドは子クラスでオーバーライド可能
     System.out.println(this.name + "は逃げ出した！");
   }
 }
