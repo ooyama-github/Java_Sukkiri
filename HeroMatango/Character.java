@@ -1,3 +1,8 @@
-public interface Creature {
-  void run(); //public abstractを省略しても大丈夫
+public abstract class Character {
+  String name;
+  int hp;
+  public void run() {
+    ...
+  }
+  public abstract void attack(Matango m);
 }
