@@ -1,6 +1,8 @@
 public class Main {
-  public void printAnything(Object o) {
-    //何型でもいいから、引数を１つ受け取り画面に表示
-    System.out.println(o.toString());
+  public static void main(String[] args) {
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+    System.out.println(h.toString());
   }
 }
