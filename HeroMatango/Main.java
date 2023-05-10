@@ -1,8 +1,7 @@
 public class Main {
   public static void main(String[] args) {
-    Hero h = new Hero();
-    h.setName(""); //長さ0文字の名前をセットしようとする
+    Empty e = new Empty();
+    String s = e.toString();
+    System.out.println(s);
   }
 }
-
-github
