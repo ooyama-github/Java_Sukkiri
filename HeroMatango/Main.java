@@ -1,14 +1,8 @@
 public class Main {
   public static void main(String[] args) {
-    Hero h1 = new Hero(); //１人目の勇者
-    h1.hp = 100;
-    Hero h2 = new Hero(); //２人目の勇者
-    h2.name = "ミナト";
-    h2.hp = 100;
-    if (h1.equals(h2) == true) {
-      System.out.println("同じ内容です");
-    } else {
-      System.out.println("違う内容です");
-    }
+    Hero h1 = new Hero();
+    Hero h2 = new Hero();
+    System.out.println(h1.hp); //インスタンスh1の箱hpを表示
+    System.out.println(Hero.money); //クラスHeroの箱moneyを表示
   }
 }
