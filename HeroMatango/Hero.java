@@ -1,7 +1,9 @@
 public class Hero {
     String name;
     int hp;
-    static int money; //静的フィールド
+    static int money;
+    
+    public static void setRandomMoney() { //staticを付けたメソッド
+        Hero.money = (int) (Math.random() * 1000);
+    }
 }
-
-//同じクラスから生成されたインスタンスでフィールドを共有したい場合には、フィールド宣言の先頭にstaticキーワードを追加します
