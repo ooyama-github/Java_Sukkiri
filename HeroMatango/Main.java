@@ -1,13 +1,15 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args) {
-    ArrayList<Integer> points = new ArrayList<Integer>(); //Integer形でArrayListを宣言
-    points.add(10); //自動的にIntegerに変換・格納される
-    points.add(80);
-    points.add(75); 
-    for (int i : points) { //拡張for文(4.45項)も利用可能
-      System.out.println(i);
+    ArrayList<String> names = new ArrayList<String>();
+    names.add("湊");
+    names.add("浅香");
+    names.add("菅原");
+    Iterator<String> it = names.iterator();
+    while (it.hasNext()) { //矢印を次に進められるなら繰り返す
+      String e = it.next(); //矢印を次に進め、内容を取り出す
+      System.out.println(e);
     }
   }
 }
