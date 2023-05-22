@@ -1,14 +1,16 @@
 import java.util.*;
 
+class Hero {
+  public String name;
+}
+
 public class Main {
-  public static void main(String[] args)  {
-    Map<String, Integer> prefs = new HashMap<String, Integer>();
-    prefs.put("京都府", 255);
-    prefs.put("東京都", 1261);
-    prefs.put("熊本県", 182);
-    for (String key : prefs.keySet()) { //件名一覧を取得し繰り返す
-      int value = prefs.get(key); //件名（キー）を指定し人口（値）を取得
-      System.out.println(key + "人口は、" + value);
-    }
+  public static void main(String[] args) {
+    Hero h = new Hero();
+    h.name = "ミナト";
+    List <Hero> list = new ArrayList<Hero>();
+    list.add(h);
+    h.name = "スガワラ";
+    System.out.println(list.get(0.name);
   }
 }
