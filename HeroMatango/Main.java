@@ -11,6 +11,6 @@ public class Main {
     List <Hero> list = new ArrayList<Hero>();
     list.add(h);
     h.name = "スガワラ";
-    System.out.println(list.get(0.name);
+    System.out.println(list.get(0).name);
   }
 }
