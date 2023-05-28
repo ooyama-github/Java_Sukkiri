@@ -2,6 +2,10 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) {
-    FileWriter fw = new FileWriter("data.txt"); //FireWriterのコンストラクタはIOExceptionを発生させる可能性があるが、try-catch文を記述していない（失敗時にどうするかを考えていない）
+    try {
+      FileWriter fw = new FileWriter("data.txt");
+    } catch(IOException e) {
+      System.out.println("エラーが発生しました。"); //例外的状況になった時に備えて記述された代替処理
+    }
   }
 }
