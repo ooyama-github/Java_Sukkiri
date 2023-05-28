@@ -1,16 +1,7 @@
-import java.util.*;
-
-class Hero {
-  public String name;
-}
+import java.io.*;
 
 public class Main {
   public static void main(String[] args) {
-    Hero h = new Hero();
-    h.name = "ミナト";
-    List <Hero> list = new ArrayList<Hero>();
-    list.add(h);
-    h.name = "スガワラ";
-    System.out.println(list.get(0).name);
+    FileWriter fw = new FileWriter("data.txt"); //FireWriterのコンストラクタはIOExceptionを発生させる可能性があるが、try-catch文を記述していない（失敗時にどうするかを考えていない）
   }
 }
